@@ -1,0 +1,88 @@
+Script started on 2024-09-29 19:02:11+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="226" LINES="11"]
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ make
+[?2004l
+make: 'pcthreads' is up to date.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads < testData.txt
+[?2004l
+Buffer size is: 1
+Consumer number is: 1
+Producer produced: 1
+Consumer 0 consumed: 1
+Producer produced: 2
+Consumer 0 consumed: 2
+Producer produced: 3
+Consumer 0 consumed: 3
+Producer produced: -1
+Consumer 0 total: 6 (Completed at 3 seconds and 6827 microseconds)
+Total producer wait time is 3 seconds and 5624 microseconds.
+Program time is 3 seconds and 7132 microseconds.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads 2 < testData.txt
+[?2004l
+Buffer size is: 2
+Consumer number is: 1
+Producer produced: 1
+Producer produced: 2
+Consumer 0 consumed: 1
+Producer produced: 3
+Consumer 0 consumed: 2
+Producer produced: -1
+Consumer 0 consumed: 3
+Consumer 0 total: 6 (Completed at 3 seconds and 3794 microseconds)
+Total producer wait time is 2 seconds and 1289 microseconds.
+Program time is 3 seconds and 4112 microseconds.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads 33 <testData.txt[C testData.txt
+[?2004l
+Exceeded the limit of buffer size
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads 1 1 < testData.txt
+[?2004l
+Buffer size is: 1
+Consumer number is: 1
+Producer produced: 1
+Consumer 0 consumed: 1
+Producer produced: 2
+Consumer 0 consumed: 2
+Producer produced: 3
+Consumer 0 consumed: 3
+Producer produced: -1
+Consumer 0 total: 6 (Completed at 3 seconds and 3590 microseconds)
+Total producer wait time is 3 seconds and 2143 microseconds.
+Program time is 3 seconds and 4588 microseconds.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads 1 2 < testData.txt
+[?2004l
+Buffer size is: 1
+Consumer number is: 2
+Producer produced: 1
+Consumer 0 consumed: 1
+Producer produced: 2
+Consumer 0 consumed: 2
+Producer produced: 3
+Consumer 1 consumed: 3
+Producer produced: -1
+Consumer 0 total: 3 (Completed at 3 seconds and 2819 microseconds)
+Consumer 1 total: 3 (Completed at 3 seconds and 2879 microseconds)
+Total producer wait time is 3 seconds and 1708 microseconds.
+Program time is 3 seconds and 2985 microseconds.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ ./pcthreads 3 3 < testData.txt
+[?2004l
+Buffer size is: 3
+Consumer number is: 3
+Producer produced: 1
+Producer produced: 2
+Producer produced: 3
+Consumer 0 consumed: 1
+Consumer 1 consumed: 2
+Consumer 2 consumed: 3
+Producer produced: -1
+Consumer 0 total: 1 (Completed at 3 seconds and 8368 microseconds)
+Consumer 1 total: 2 (Completed at 3 seconds and 8470 microseconds)
+Consumer 2 total: 3 (Completed at 3 seconds and 9324 microseconds)
+Total producer wait time is 1 seconds and 513 microseconds.
+Program time is 3 seconds and 10053 microseconds.
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ testDat[K[K[K[K[K[K[K./pcthreads 2 11 <testData testData[C[C[C[C[C[C[C[C.txt
+[?2004l
+Exceeded the limit of consumer number
+[?2004h]0;student@cs2324: ~/OSProjects/Project3[01;32mstudent@cs2324[00m:[01;34m~/OSProjects/Project3[00m$ exit
+[?2004l
+exit
+
+Script done on 2024-09-29 19:06:19+00:00 [COMMAND_EXIT_CODE="1"]
